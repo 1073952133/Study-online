@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="176dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" />
+        <LinearLayout
+            android:id="@+id/ip_address"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/logo1"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/login1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码"
+                android:textSize="30dp"
+                android:letterSpacing="0.6"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ip_address2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/ip_address"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.5"
+                android:text="使用您的Study Online密码"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ip_address3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ip_address2"
+            >
+            <EditText
+                android:id="@+id/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:maxLength="20"
+                android:hint="请输入密码"
+                android:textSize="30dp"
+                android:password="true">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ip_address4"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_below="@id/ip_address3"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="29dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:text="忘记密码?"
+                android:textColor="#295a83" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ip_address5"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_below="@id/ip_address4"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="29dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#1b6dc3"
+                android:text="下一步"
+                android:textColor="#dfffff">
+
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/help"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="帮助"
+                android:textSize="20dp"></TextView>
+            <TextView
+                android:id="@+id/privacy"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:text="隐私权">
+            </TextView>
+            <TextView
+                android:id="@+id/clause"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:text="条款">
+            </TextView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
